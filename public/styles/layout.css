@@ -19,16 +19,17 @@ body {
   background-color: #f4f1ec;
   font-size: 24px;
   font-family: 'Source Sans Pro', sans-serif;
+  width: 100%;
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
- main {
+ .container {
   display: flex;
   align-items: center;
   width: 90%;
-  padding-left: 150px;
+  margin: 0 auto;
   background-color: #f4f1ec;
  }

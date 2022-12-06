@@ -1,0 +1,29 @@
+.new-tweet {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.tweet-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.tweet-footer {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Bungee', cursive;
+  padding-top: 0.5em
+}
+
+.input {
+  color: #FFFFFF;
+  background-color: #4056A1;
+  padding-top: 3px;
+}
+
+#tweet-text {
+  background-color: #f4f1ec;
+  border: 0px;
+  border-bottom: 4px solid #545149;
+}
