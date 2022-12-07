@@ -1,3 +1,5 @@
+<!-------- Main HTML code -------->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -46,15 +48,14 @@
       </div>
     </header>
 
-    <!-- Page-specific (main) content here -->
+    <!-- Page-specific (main) content -->
     <main class="container">
 
+      <!-- Post a new tweet -->
       <section class="new-tweet">
-        <h2>Compose Tweet</h2>
         <form method="POST" action="/tweets">
           <div class="tweet-input">
-            <label for="tweet-text"><strong>What are you humming about?</strong></label>
-            <textarea name="text" id="tweet-text"></textarea>
+            <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
           </div>
           <div class="tweet-footer">
             <button type="submit" class="tweet-footer input">Tweet</button>
@@ -63,8 +64,8 @@
         </form>
       </section>
 
+      <!-- View tweets -->
       <article class="tweet-container" :hover>
-
         <section class="tweet-container-header">
           <div>
             <img src="/images/tweeter-face.png">
@@ -72,11 +73,9 @@
           </div>
           <span class="handle">@NotImposter</span>
         </section>
-
         <section class="tweet-container-body">
           <p>This is a tweet about how I started coding and was so great at it. </p>
         </section>
-
         <section class="tweet-container-footer">
           <span>10 days ago</span>
           <span class="tweeter-icons">
@@ -85,7 +84,6 @@
             <i class="fa-solid fa-heart" :hover></i>
           </span>
         </section>
-        
       </article>
 
     </main>

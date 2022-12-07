@@ -3,6 +3,7 @@
  * https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
  */
+
 html {
   box-sizing: border-box;
 }
@@ -10,9 +11,7 @@ html {
   box-sizing: inherit;
 }
 
-/*
- * Global layout stuff
- */
+/* Global layout */
 
 body {
   color: #545149;
@@ -23,9 +22,7 @@ body {
   padding-bottom: 2em;
 }
 
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
+/* Main container */
 
  .container {
   display: flex;
@@ -35,7 +32,6 @@ body {
   margin: 0 auto;
   background-color: #f4f1ec;
  }
-
 
  .red {
   color: red;

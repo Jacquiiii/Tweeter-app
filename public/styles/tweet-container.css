@@ -1,3 +1,5 @@
+/* -------- View tweets -------- */
+
 .tweet-container {
   display: flex;
   flex-direction: column;
@@ -9,6 +11,7 @@
   box-shadow: 7px 7px rgb(179, 189, 196);
 }
 
+/* Header code */
 .tweet-container-header {
   display: flex;
   justify-content: space-between;
@@ -16,22 +19,6 @@
   width: 95%;
   margin: 0 auto;
   padding-top: 1em;
-}
-
-.tweet-container-body {
-  align-self: flex-start;
-  width: 95%;
-  margin: 0 auto;
-}
-
-.tweet-container-footer {
-  display: flex;
-  justify-content: space-between;
-  border-top: 4px solid #545149;
-  width: 95%;
-  margin: 0 auto;
-  padding-bottom: 1em;
-  padding-top: 0.5em;
 }
 
 .tweet-container-header>div {
@@ -43,6 +30,30 @@
   padding-left: 0.5em;
 }
 
+.handle {
+  color: lightgrey;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Body code */
+.tweet-container-body {
+  align-self: flex-start;
+  width: 95%;
+  margin: 0 auto;
+}
+
+/* Footer code */
+.tweet-container-footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 4px solid #545149;
+  width: 95%;
+  margin: 0 auto;
+  padding-bottom: 1em;
+  padding-top: 0.5em;
+}
+
 .tweet-container-footer>span {
   font-size: 17px;
 }
@@ -51,21 +62,15 @@
   color: #4056A1;
 }
 
-.handle {
-  color: lightgrey;
-  font-weight: bold;
-  font-style: italic;
-}
-
 .fa-flag:hover {
-  color: goldenrod
+  color: goldenrod;
 }
 
 .fa-retweet:hover {
-  color: goldenrod
+  color: goldenrod;
 }
 
 .fa-heart:hover {
-  color: goldenrod
+  color: goldenrod;
 }
 
