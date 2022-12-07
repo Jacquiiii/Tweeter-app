@@ -71,9 +71,22 @@ const renderTweets = function (tweets) {
     $('.tweets-container').append($tweet);
   }
 
-}
+};
+
 
 $(document).ready(function () {
+
+  // listens for submit event on tweet buttosn and posts form data to /tweets
+  $('form').submit(event => {
+    event.preventDefault();
+    const formData = $('form').serialize();
+  
+    $.post('/tweets', formData, (response) => {
+      console.log(response);
+    })
+  
+  });
+
   renderTweets(data);
 });
 
