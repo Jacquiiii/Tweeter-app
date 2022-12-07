@@ -1,10 +1,17 @@
 /* -------- View tweets -------- */
 
+.tweets-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
 .tweet-container {
   display: flex;
   flex-direction: column;
   width: 100%;
   border: 4px solid #545149;
+  margin-bottom: 1.5em;
 }
 
 .tweet-container:hover {
