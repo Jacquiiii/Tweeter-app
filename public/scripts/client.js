@@ -1,5 +1,7 @@
 // takes in a tweet object and returns a tweet <article> element containing the entire HTML structure of the tweet
 const createTweetElement = function(tweet) {
+  const timeOfTweet = timeago.format(tweet.created_at);
+
   const $tweet = `
     <article class="tweet-container">
       <section class="tweet-container-header">
@@ -13,7 +15,7 @@ const createTweetElement = function(tweet) {
         <p>${tweet.content.text}</p>
       </section>
       <section class="tweet-container-footer">
-        <span>${tweet.created_at}</span>
+        <span>${timeOfTweet}</span>
         <span class="tweeter-icons">
           <i class="fa-solid fa-flag"></i>
           <i class="fa-sharp fa-solid fa-retweet"></i>
@@ -23,6 +25,7 @@ const createTweetElement = function(tweet) {
       </section>
     </article>
     `;
+     
   return $tweet;
 };
 
