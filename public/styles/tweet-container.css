@@ -1,11 +1,19 @@
 /* ---------------------- Styling for list of tweets ----------------------- */
 
+/* Mobile & Tablet */
 .tweets-container {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
 
+/* Desktop */
+@media screen and (min-width: 1280px) {
+  .tweets-container {
+    float: right;
+    width: 60%;
+  }
+}
 
 .tweet-container {
   display: flex;
@@ -20,7 +28,7 @@
   box-shadow: 0.25em 0.25em rgb(179, 189, 196);
 }
 
-/* Tweet header code --------------------------------- */
+/* Tweet header code ------------------------ */
 .tweet-container-header {
   display: flex;
   justify-content: space-between;
@@ -45,7 +53,7 @@
   font-style: italic;
 }
 
-/* Tweet body code ----------------------------------- */
+/* Tweet body code -------------------------- */
 .tweet-container-body {
   align-self: flex-start;
   width: 95%;
@@ -56,7 +64,7 @@
   overflow-wrap: anywhere;
 }
 
-/* Tweet footer code --------------------------------- */
+/* Tweet footer code ------------------------- */
 .tweet-container-footer {
   display: flex;
   justify-content: space-between;

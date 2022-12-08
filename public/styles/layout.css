@@ -1,3 +1,5 @@
+/* Global layout ------------- */ 
+
 /*
  * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
  * https://css-tricks.com/international-box-sizing-awareness-day/
@@ -9,7 +11,7 @@ html {
   box-sizing: inherit;
 }
 
-/* Global layout */
+/* Mobile & Tablet */
 body {
   font-size: 24px;
   font-family: 'Source Sans Pro', sans-serif;
@@ -19,17 +21,30 @@ body {
   background-color: #f4f1ec;
 }
 
-/* Main container */
- .container {
+/* Desktop */
+@media screen and (min-width: 1280px) {
+  body {
+    display: flex;
+  }
+}
+
+/* Main container ------------- */
+
+/* Mobile & Tablet */
+.container {
   display: flex;
   align-items: center;
   flex-direction: column;
   width: 90%;
   margin: 0 auto;
   background-color: #f4f1ec;
- }
+}
 
- /* Added when condition is met on composer-char-counter.js */
- .red {
-  color: red;
+ /* Desktop */
+@media screen and (min-width: 1280px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
 }

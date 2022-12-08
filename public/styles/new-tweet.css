@@ -1,11 +1,21 @@
 /* -------------------- Styling for posting a new tweet --------------------- */
 
+/* Mobile & Tablet */
 .new-tweet {
   display: flex;
   flex-direction: column;
   width: 100%;
   padding-bottom: 3em;
   padding-top: 2em;
+}
+
+/* Desktop */
+@media screen and (min-width: 1280px) {
+  .new-tweet {
+    float: right;
+    width: 60%;
+    padding-top: 7.5em;
+  }
 }
 
 .tweet-input {
@@ -39,4 +49,9 @@
   width: 100%;
   text-align: center;
   margin-bottom: 1em;
+}
+
+ /* Added when condition is met on composer-char-counter.js */
+ .red {
+  color: red;
 }
