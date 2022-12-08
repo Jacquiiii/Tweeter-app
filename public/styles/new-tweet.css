@@ -23,18 +23,18 @@
 .input {
   color: #FFFFFF;
   background-color: #4056A1;
-  padding-top: 3px;
+  padding-top: 0.20em;
 }
 
 #tweet-text {
   background-color: #f4f1ec;
-  border: 0px;
-  border-bottom: 4px solid #545149;
+  border: 0em;
+  border-bottom: 0.20em solid #545149;
 }
 
 .errors div {
   color: red;
-  border: 3px solid red;
+  border: 0.15em solid red;
   padding: 0.25em;
   width: 100%;
   text-align: center;
