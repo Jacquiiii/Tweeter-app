@@ -1,8 +1,7 @@
-/* -------- Top nav bar (fixed) -------- */
+/* ------------------- Syling for top nav bar (fixed) ------------------------ */
 
 nav {
   display: flex;
-  flex-direction: row;
   justify-content:space-between;
   align-items: center;
   color: #FFFFFF;
@@ -16,6 +15,7 @@ nav {
 
  nav>span {
   font-family: 'Bungee', cursive;
+  font-size: 35px;
  }
 
  .header-right {

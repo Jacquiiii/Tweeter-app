@@ -1,5 +1,3 @@
-/* Nav bar sits on top of the header */
-
 header {
   display: flex;
   flex-direction: column;
@@ -8,7 +6,7 @@ header {
   width: 100%;
   height: 520px;
   background-color: rgb(179, 189, 196);
-  background-image: url("https://www.transparenttextures.com/patterns/cutcube.png");
+  background-image: url('https://www.transparenttextures.com/patterns/silver-scales.png');
 }
 
 header>div>h2 {

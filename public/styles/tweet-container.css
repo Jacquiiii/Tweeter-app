@@ -1,4 +1,4 @@
-/* -------- View tweets -------- */
+/* ---------------------- Styling for list of tweets ----------------------- */
 
 .tweets-container {
   display: flex;
@@ -18,7 +18,7 @@
   box-shadow: 7px 7px rgb(179, 189, 196);
 }
 
-/* Header code */
+/* Tweet header code --------------------------------- */
 .tweet-container-header {
   display: flex;
   justify-content: space-between;
@@ -43,7 +43,7 @@
   font-style: italic;
 }
 
-/* Body code */
+/* Tweet body code ----------------------------------- */
 .tweet-container-body {
   align-self: flex-start;
   width: 95%;
@@ -54,7 +54,7 @@
   overflow-wrap: anywhere;
 }
 
-/* Footer code */
+/* Tweet footer code --------------------------------- */
 .tweet-container-footer {
   display: flex;
   justify-content: space-between;

@@ -1,7 +1,6 @@
-<!-------- Main HTML code -------->
-
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
@@ -27,6 +26,7 @@
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+    
   </head>
 
   <body>
@@ -45,7 +45,7 @@
       </div>
       <br>
       <div>
-        <h2>Coding Queen</h2>
+        <h2>Miss Imposter</h2>
       </div>
     </header>
 
@@ -55,6 +55,7 @@
       <!-- Post a new tweet -->
       <section class="new-tweet">
         <form>
+
           <div class="errors">
             <div class="empty-error" hidden>
               <i class="fa-solid fa-triangle-exclamation"></i>
@@ -67,6 +68,7 @@
               <i class="fa-solid fa-triangle-exclamation"></i>
             </div>
           </div>
+
           <div class="tweet-input">
             <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
           </div>
@@ -74,14 +76,16 @@
             <button type="submit" class="tweet-footer input">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
+
         </form>
       </section>
 
-      <!-- View tweets -->
+      <!-- View list of tweets -->
       <section class="tweets-container"></section>
 
     </main>
 
   </body>
+
 </html>
 

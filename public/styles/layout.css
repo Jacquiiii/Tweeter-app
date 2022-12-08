@@ -1,9 +1,7 @@
 /*
  * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
  * https://css-tricks.com/international-box-sizing-awareness-day/
- * Do not modify these two selectors, please
  */
-
 html {
   box-sizing: border-box;
 }
@@ -12,18 +10,16 @@ html {
 }
 
 /* Global layout */
-
 body {
-  color: #545149;
-  background-color: #f4f1ec;
   font-size: 24px;
   font-family: 'Source Sans Pro', sans-serif;
   width: 100%;
   padding-bottom: 2em;
+  color: #545149;
+  background-color: #f4f1ec;
 }
 
 /* Main container */
-
  .container {
   display: flex;
   align-items: center;
@@ -33,6 +29,7 @@ body {
   background-color: #f4f1ec;
  }
 
+ /* Added when condition is met on composer-char-counter.js */
  .red {
   color: red;
 }
