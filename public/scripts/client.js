@@ -1,3 +1,10 @@
+// escapes text to prevent cross site scripting when used
+const escape = function (str) {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+};
+
 // takes in a tweet object and returns a tweet <article> element containing the entire HTML structure of the tweet
 const createTweetElement = function(tweet) {
   const timeOfTweet = timeago.format(tweet.created_at);
@@ -12,7 +19,7 @@ const createTweetElement = function(tweet) {
         <span class="handle">${tweet.user.handle}</span>
       </section>
       <section class="tweet-container-body">
-        <p>${tweet.content.text}</p>
+        <p>${escape(tweet.content.text)}</p>
       </section>
       <section class="tweet-container-footer">
         <span>${timeOfTweet}</span>
@@ -66,8 +73,9 @@ $(document).ready(function() {
     } else {
       const formData = $('form').serialize();
       $.post('/tweets', formData, () => {
+        $("#tweet-text").val('');
+        $('.counter').text(140);
         loadTweets();
-        $('form').trigger('reset');
       });
     }
   
