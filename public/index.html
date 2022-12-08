@@ -55,6 +55,18 @@
       <!-- Post a new tweet -->
       <section class="new-tweet">
         <form>
+          <div class="errors">
+            <div class="empty-error" hidden>
+              <i class="fa-solid fa-triangle-exclamation"></i>
+              <span>Your tweet cannot be empty. Please enter a message to tell your friends what you're humming about!</span>
+              <i class="fa-solid fa-triangle-exclamation"></i>
+            </div>
+            <div class="exceeded-char-error" hidden>
+              <i class="fa-solid fa-triangle-exclamation"></i>
+              <span>Your tweet is too long! Please shorten your tweet so you can tell your friends what you're thinking.</span>
+              <i class="fa-solid fa-triangle-exclamation"></i>
+            </div>
+          </div>
           <div class="tweet-input">
             <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
           </div>

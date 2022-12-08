@@ -67,10 +67,14 @@ $(document).ready(function() {
     // if tweet input is empty or exceeds character count, alert is presented
     // otherwise, form data is posted to /tweets then all /tweets data is loaded
     if (!tweetInput) {
-      alert('Tweet cannot be empty. Please enter a message to tell your friends what you\'re humming about!');
+      $('.empty-error').slideDown("slow");
+      // alert('Tweet cannot be empty. Please enter a message to tell your friends what you\'re humming about!');
     } else if (tweetInput.length > 140) {
-      alert('Your tweet is too long! Please shorten your tweet so we can get to telling your friends what you\'re humming about.');
+      $('.exceeded-char-error').slideDown("slow");
+      // alert('Your tweet is too long! Please shorten your tweet so we can get to telling your friends what you\'re humming about.');
     } else {
+      $('.empty-error').slideUp("slow");
+      $('.exceeded-char-error').slideUp("slow");
       const formData = $('form').serialize();
       $.post('/tweets', formData, () => {
         $("#tweet-text").val('');
