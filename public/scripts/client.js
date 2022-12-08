@@ -60,6 +60,7 @@ $(document).ready(function() {
 
     $.post('/tweets', formData, () => {
       loadTweets();
+      $('form').trigger('reset');
     });
   
   });
