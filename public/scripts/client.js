@@ -53,15 +53,23 @@ const renderTweets = function(tweets) {
 $(document).ready(function() {
 
   // listens for submit event on tweet button
-  // when clicked, form data is posted to /tweets then all /tweets data is loaded
   $('form').submit(event => {
     event.preventDefault();
-    const formData = $('form').serialize();
+    const tweetInput = $("#tweet-text").val().trim();
 
-    $.post('/tweets', formData, () => {
-      loadTweets();
-      $('form').trigger('reset');
-    });
+    // if tweet input is empty or exceeds character count, alert is presented
+    // otherwise, form data is posted to /tweets then all /tweets data is loaded
+    if (!tweetInput) {
+      alert('Tweet cannot be empty. Please enter a message to tell your friends what you\'re humming about!');
+    } else if (tweetInput.length > 140) {
+      alert('Your tweet is too long! Please shorten your tweet so we can get to telling your friends what you\'re humming about.');
+    } else {
+      const formData = $('form').serialize();
+      $.post('/tweets', formData, () => {
+        loadTweets();
+        $('form').trigger('reset');
+      });
+    }
   
   });
 

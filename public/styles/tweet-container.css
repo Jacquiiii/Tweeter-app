@@ -50,6 +50,10 @@
   margin: 0 auto;
 }
 
+.tweet-container-body>p{
+  overflow-wrap: anywhere;
+}
+
 /* Footer code */
 .tweet-container-footer {
   display: flex;
