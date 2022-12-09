@@ -4,11 +4,12 @@ header {
   flex-direction: column;
   justify-content:flex-end;
   align-items: center;
-  max-width: 100%;
-  height: 520px;
+  width: 100%;
+  height: 400px;
   color: white;
   background-color: rgb(179, 189, 196);
   background-image: url('https://www.transparenttextures.com/patterns/diagmonds.png');
+  position: fixed;
 }
 
 /* Desktop */

@@ -4,7 +4,7 @@
   flex-direction: column;
   width: 100%;
   padding-bottom: 3em;
-  padding-top: 2em;
+  padding-top: 19em;
 }
 
 /* Desktop */
@@ -22,7 +22,9 @@
 }
 
 #tweet-text {
+  color: #545149;
   background-color: #f4f1ec;
+  font-weight: bold;
   border: 0em;
   border-bottom: 0.20em solid #545149;
 }
