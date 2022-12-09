@@ -20,3 +20,8 @@ Note: This project was built with starter code from [this repository](https://gi
 - Chance
 - Body-Parser
 - MD5
+
+## Screenshots
+
+!["Screenshot of desktop view"](https://github.com/Jacquiiii/Tweeter-app/blob/master/docs/Desktop-view.png?raw=true)
+!["Screenshot of mobile & tablet view"](https://github.com/Jacquiiii/Tweeter-app/blob/master/docs/Mobile-and-tablet-view.png)
