@@ -24,4 +24,5 @@ Note: This project was built with starter code from [this repository](https://gi
 ## Screenshots
 
 !["Screenshot of desktop view"](https://github.com/Jacquiiii/Tweeter-app/blob/master/docs/Desktop-view.png?raw=true)
-!["Screenshot of mobile & tablet view"](https://github.com/Jacquiiii/Tweeter-app/blob/master/docs/Mobile-and-tablet-view.png)
+!["Screenshot of mobile & tablet view"](https://github.com/Jacquiiii/Tweeter-app/blob/master/docs/Mobile-Tablet-view.png?raw=true)
+!["Screenshot of writing a tweet"](https://github.com/Jacquiiii/Tweeter-app/blob/master/docs/Write-tweet.png?raw=true)
