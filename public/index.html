@@ -43,14 +43,12 @@
       <div>
           <img src="/images/profile-hex.png"> 
       </div>
-      <br>
       <div>
-        <h2>Miss Imposter</h2>
+        <h2>Jane Smith</h2>
       </div>
     </header>
 
-    <!-- Page-specific (main) content -->
-    <main class="container">
+    <main>
 
       <!-- Post a new tweet -->
       <section class="new-tweet">
@@ -59,12 +57,12 @@
           <div class="errors">
             <div class="empty-error" hidden>
               <i class="fa-solid fa-triangle-exclamation"></i>
-              <span>Your tweet cannot be empty. Please enter a message to tell your friends what you're humming about!</span>
+              <span>Please enter a message to tell your friends what you're humming about!</span>
               <i class="fa-solid fa-triangle-exclamation"></i>
             </div>
             <div class="exceeded-char-error" hidden>
               <i class="fa-solid fa-triangle-exclamation"></i>
-              <span>Your tweet is too long! Please shorten your tweet so you can tell your friends what you're thinking.</span>
+              <span>Your tweet has exceeded the character limit! Please shorten it.</span>
               <i class="fa-solid fa-triangle-exclamation"></i>
             </div>
           </div>
@@ -72,9 +70,9 @@
           <div class="tweet-input">
             <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
           </div>
-          <div class="tweet-footer">
-            <button type="submit" class="tweet-footer input">Tweet</button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
+          <div class="submit-count">
+            <button type="submit">Tweet</button>
+            <output class="counter">140</output>
           </div>
 
         </form>

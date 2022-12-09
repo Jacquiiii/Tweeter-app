@@ -31,7 +31,7 @@ body {
 /* Main container ------------- */
 
 /* Mobile & Tablet */
-.container {
+main {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -42,7 +42,7 @@ body {
 
  /* Desktop */
 @media screen and (min-width: 1280px) {
-  .container {
+  main {
     display: flex;
     flex-direction: column;
     align-items: flex-end;

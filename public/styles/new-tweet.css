@@ -1,5 +1,3 @@
-/* -------------------- Styling for posting a new tweet --------------------- */
-
 /* Mobile & Tablet */
 .new-tweet {
   display: flex;
@@ -23,23 +21,24 @@
   flex-direction: column;
 }
 
-.tweet-footer {
+#tweet-text {
+  background-color: #f4f1ec;
+  border: 0em;
+  border-bottom: 0.20em solid #545149;
+}
+
+.submit-count {
   display: flex;
   justify-content: space-between;
   font-family: 'Bungee', cursive;
   padding-top: 0.5em;
 }
 
-.input {
+button {
   color: #FFFFFF;
   background-color: #4056A1;
   padding-top: 0.20em;
-}
-
-#tweet-text {
-  background-color: #f4f1ec;
-  border: 0em;
-  border-bottom: 0.20em solid #545149;
+  border-radius: 0.25em;
 }
 
 .errors div {

@@ -71,12 +71,16 @@ $(document).ready(function() {
     event.preventDefault();
     const tweetInput = $('#tweet-text').val().trim();
 
-    // if tweet input is empty or exceeds character count, alert is presented
+    // if tweet input is empty or exceeds character count, error message is presented
     // otherwise, form data is posted to /tweets then all /tweets data is loaded
     if (!tweetInput) {
+      $('.empty-error').slideUp();
+      $('.exceeded-char-error').slideUp();
       $('.empty-error').slideDown();
 
     } else if (tweetInput.length > 140) {
+      $('.empty-error').slideUp();
+      $('.exceeded-char-error').slideUp();
       $('.exceeded-char-error').slideDown();
       
     } else {
