@@ -2,7 +2,7 @@
 
 Tweeter is a simple, single-page Twitter clone built by Jacqui Koroll. It's functionality allows users to write, post and view tweets. 
 
-Note: This project was built with starter code from [this repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+Note: This project was built with starter code from [this repository](https://github.com/lighthouse-labs/tweeter).
 
 ## Getting Started
 
