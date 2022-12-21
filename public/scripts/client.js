@@ -63,6 +63,13 @@ const renderTweets = function(tweets) {
 };
 
 
+// slides error message up
+const slideErrorUp = function() {
+  $('.empty-error').slideUp();
+  $('.exceeded-char-error').slideUp();
+};
+
+
 // executes when dom is fully loaded
 $(document).ready(function() {
 
@@ -74,18 +81,15 @@ $(document).ready(function() {
     // if tweet input is empty or exceeds character count, error message is presented
     // otherwise, form data is posted to /tweets then all /tweets data is loaded
     if (!tweetInput) {
-      $('.empty-error').slideUp();
-      $('.exceeded-char-error').slideUp();
+      slideErrorUp();
       $('.empty-error').slideDown();
 
     } else if (tweetInput.length > 140) {
-      $('.empty-error').slideUp();
-      $('.exceeded-char-error').slideUp();
+      slideErrorUp();
       $('.exceeded-char-error').slideDown();
       
     } else {
-      $('.empty-error').slideUp();
-      $('.exceeded-char-error').slideUp();
+      slideErrorUp();
       
       const formData = $('form').serialize();
       $.post('/tweets', formData, () => {
