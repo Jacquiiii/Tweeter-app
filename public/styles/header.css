@@ -9,7 +9,7 @@ header {
   color: white;
   background-color: rgb(179, 189, 196);
   background-image: url('https://www.transparenttextures.com/patterns/diagmonds.png');
-  position: fixed;
+  /* position: fixed; */
 }
 
 /* Desktop */

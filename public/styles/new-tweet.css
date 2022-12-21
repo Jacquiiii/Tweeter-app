@@ -3,8 +3,8 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding-bottom: 3em;
-  padding-top: 19em;
+  padding-bottom: 1em;
+  padding-top: 3em;
 }
 
 /* Desktop */
@@ -14,6 +14,10 @@
     width: 60%;
     padding-top: 7.5em;
   }
+}
+
+form {
+  display:none;
 }
 
 .tweet-input {
@@ -36,11 +40,12 @@
   padding-top: 0.5em;
 }
 
-button {
+.tweet-button {
   color: #FFFFFF;
   background-color: #4056A1;
   padding-top: 0.20em;
   border-radius: 0.25em;
+  cursor: pointer;
 }
 
 .errors div {

@@ -81,15 +81,7 @@
   color: #4056A1;
 }
 
-.fa-flag:hover {
+.fa-flag:hover, .fa-retweet:hover, .fa-heart:hover {
   color: goldenrod;
+  cursor: pointer;
 }
-
-.fa-retweet:hover {
-  color: goldenrod;
-}
-
-.fa-heart:hover {
-  color: goldenrod;
-}
-
