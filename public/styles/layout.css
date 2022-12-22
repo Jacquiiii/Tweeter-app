@@ -48,3 +48,21 @@ main {
     align-items: flex-end;
   }
 }
+
+.bring-to-top {
+  align-self: flex-end;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #ac0000;
+  width: 3em;
+  height: 3em;
+  border-color: transparent;
+  position: fixed;
+  top: 85%;
+  display:none;
+}
+
+.bring-to-top:hover{
+  text-decoration:none;
+  cursor: pointer;
+}
