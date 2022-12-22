@@ -1,0 +1,48 @@
+@use 'base';
+
+/* Mobile & Tablet */
+nav {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  color: base.$white;
+  background-color: base.$transparent;
+  width: 100%;
+  height: 120px;
+  padding: 0 1.5em;
+  position: fixed;
+  
+  .header-right {
+    @include base.flex-column-center;
+    padding-top: 1em;
+  }
+  
+  .fa-angles-down {
+    color: base.$dark-red;
+  }
+  
+  .fa-angles-down:hover {
+    animation-name: slide;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    cursor: base.$cursor;
+  }
+  
+  @keyframes slide {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(7px); }
+    100% { transform: translateY(0); }
+  }
+}
+
+ /* Desktop */
+@media screen and (min-width: 1280px) {
+  nav {
+    background-color: base.$blue;
+  }
+}
+
+nav>span {
+  font-family: base.$tweeter-font;
+  font-size: 1.5em;
+}

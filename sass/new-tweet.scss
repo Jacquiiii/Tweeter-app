@@ -1,0 +1,65 @@
+@use 'base';
+
+/* Mobile & Tablet */
+.new-tweet {
+  @include base.flex-column;
+  width: 100%;
+  padding-bottom: 1em;
+  padding-top: 3em;
+
+  form {
+    display:none;
+  }
+  
+  .tweet-input {
+    @include base.flex-column;
+  }
+  
+  #tweet-text {
+    color: base.$dark-grey;
+    background-color: base.$off-white;
+    font-weight: bold;
+    border: 0em;
+    border-bottom: base.$grey-border;
+  }
+  
+  .submit-count {
+    display: flex;
+    justify-content: space-between;
+    font-family: base.$tweeter-font;
+    padding-top: 0.5em;
+  }
+  
+  .tweet-button {
+    color: base.$white;
+    background-color: base.$blue;
+    padding-top: 0.20em;
+    border-radius: 0.25em;
+    cursor: base.$cursor;
+  }
+  
+  .errors div {
+    color: base.$red;
+    font-size: 0.75em;
+    border: base.$red-border;
+    padding: 0.25em;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1em;
+    border-radius: 0.25em;
+  }
+  
+  /* Added when condition is met on composer-char-counter.js */
+  .red {
+    color: base.$red;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1280px) {
+  .new-tweet {
+    float: right;
+    width: 60%;
+    padding-top: 7.5em;
+  }
+}

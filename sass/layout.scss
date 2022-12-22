@@ -1,4 +1,7 @@
-/* Global layout ------------- */
+@use 'base';
+
+/* Global layout ------------- */ 
+
 /*
  * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
  * https://css-tricks.com/international-box-sizing-awareness-day/
@@ -6,7 +9,6 @@
 html {
   box-sizing: border-box;
 }
-
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -14,11 +16,11 @@ html {
 /* Mobile & Tablet */
 body {
   font-size: 24px;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: base.$main-font;
   width: 100%;
   padding-bottom: 2em;
-  color: #545149;
-  background-color: #f4f1ec;
+  color: base.$dark-grey;
+  background-color: base.$off-white;
 }
 
 /* Desktop */
@@ -27,34 +29,36 @@ body {
     display: flex;
   }
 }
+
 /* Main container ------------- */
+
 /* Mobile & Tablet */
 main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include base.flex-column-center;
   width: 90%;
   margin: 0 auto;
-  background-color: #f4f1ec;
-}
-main .bring-to-top {
-  align-self: flex-end;
-  border-radius: 50%;
-  color: #fff;
-  background-color: #ac0000;
-  width: 3em;
-  height: 3em;
-  border-color: transparent;
-  position: fixed;
-  top: 85%;
-  display: none;
-}
-main .bring-to-top:hover {
-  text-decoration: none;
-  cursor: pointer;
+  background-color: base.$off-white;
+
+  .bring-to-top {
+    align-self: flex-end;
+    border-radius: 50%;
+    color: base.$white;
+    background-color: base.$dark-red;
+    width: 3em;
+    height: 3em;
+    border-color: base.$transparent;
+    position: fixed;
+    top: 85%;
+    display:none;
+  }
+
+  .bring-to-top:hover{
+    text-decoration:none;
+    cursor: base.$cursor;
+  }
 }
 
-/* Desktop */
+ /* Desktop */
 @media screen and (min-width: 1280px) {
   main {
     display: flex;

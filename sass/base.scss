@@ -1,0 +1,32 @@
+// Theme colors
+$transparent: transparent;
+$white: #fff;
+$off-white: #f4f1ec;
+$light-grey: rgb(179, 189, 196);
+$dark-grey: #545149;
+$dark-red: #ac0000;
+$red: red;
+$blue: #4056A1;
+$yellow: goldenrod;
+
+// Fonts
+$main-font: 'Source Sans Pro', sans-serif;
+$tweeter-font: 'Bungee', cursive;
+
+// Borders
+$grey-border: 0.20em solid $dark-grey;
+$red-border: 0.15em solid $red;
+
+// Other
+$cursor: pointer;
+
+@mixin flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}

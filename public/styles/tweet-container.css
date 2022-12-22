@@ -4,30 +4,18 @@
   flex-direction: column;
   width: 100%;
 }
-
-/* Desktop */
-@media screen and (min-width: 1280px) {
-  .tweets-container {
-    float: right;
-    width: 60%;
-  }
-}
-
-.tweet-container {
+.tweets-container .tweet-container {
   display: flex;
   flex-direction: column;
   width: 100%;
-  border: 0.20em solid #545149;
+  border: 0.2em solid #545149;
   border-radius: 1em;
   margin-bottom: 1.5em;
+  /* Tweet header code -------------------- */
+  /* Tweet body code ---------------------- */
+  /* Tweet footer code -------------------- */
 }
-
-.tweet-container:hover {
-  box-shadow: 0.25em 0.25em rgb(179, 189, 196);
-}
-
-/* Tweet header code ------------------------ */
-.tweet-container-header {
+.tweets-container .tweet-container .tweet-container-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -35,53 +23,53 @@
   margin: 0 auto;
   padding-top: 1em;
 }
-
-.tweet-container-header>div {
+.tweets-container .tweet-container .tweet-container-header > div {
   display: flex;
   align-items: center;
 }
-
-.tweet-container-header>div>span {
+.tweets-container .tweet-container .tweet-container-header > div > span {
   padding-left: 0.5em;
 }
-
-.handle {
-  color: lightgrey;
+.tweets-container .tweet-container .handle {
+  color: rgb(179, 189, 196);
   font-weight: bold;
   font-style: italic;
 }
-
-/* Tweet body code -------------------------- */
-.tweet-container-body {
+.tweets-container .tweet-container .tweet-container-body {
   align-self: flex-start;
   width: 95%;
   margin: 0 auto;
 }
-
-.tweet-container-body>p{
+.tweets-container .tweet-container .tweet-container-body > p {
   overflow-wrap: anywhere;
 }
-
-/* Tweet footer code ------------------------- */
-.tweet-container-footer {
+.tweets-container .tweet-container .tweet-container-footer {
   display: flex;
   justify-content: space-between;
-  border-top: 0.20em solid #545149;
+  border-top: 0.2em solid #545149;
   width: 95%;
   margin: 0 auto;
   padding-bottom: 1em;
   padding-top: 0.75em;
 }
-
-.tweet-container-footer>span {
+.tweets-container .tweet-container .tweet-container-footer > span {
   font-size: 0.65em;
 }
-
-.tweeter-icons {
+.tweets-container .tweet-container .tweeter-icons {
   color: #4056A1;
 }
-
-.fa-flag:hover, .fa-retweet:hover, .fa-heart:hover {
+.tweets-container .tweet-container .fa-flag:hover, .tweets-container .tweet-container .fa-retweet:hover, .tweets-container .tweet-container .fa-heart:hover {
   color: goldenrod;
   cursor: pointer;
+}
+.tweets-container .tweet-container:hover {
+  box-shadow: 0.25em 0.25em rgb(179, 189, 196);
+}
+
+/* Desktop */
+@media screen and (min-width: 1280px) {
+  .tweets-container {
+    float: right;
+    width: 60%;
+  }
 }
